@@ -1,10 +1,34 @@
 function isPalindrome(word) {
   // Write your algorithm here
+
+  // make copy of string and put into array
+  let wordArr = Array.from(word) 
+
+  // reverse array in new variable
+  let wordRev = wordArr.reverse()
+  
+
+  wordRev = wordRev.toString()
+  wordRev = wordRev.replaceAll(',', '')
+
+  console.log(wordRev)
+  console.log(wordArr)
+  if (word === wordRev) {
+    console.log("true")
+    return true
+  }
+  else {
+    return false
+  }
+
+
 }
 
 /* 
   Add your pseudocode here
 */
+
+/* have the word string into an array in a new variable. then compare with if statement and return true or false
 
 /*
   Add written explanation of your solution here
